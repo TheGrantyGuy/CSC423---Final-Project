@@ -86,8 +86,8 @@ print(df.columns)
 
 cursor.execute("""
     SELECT t.tutorNo, first_name, last_name, sectionNo, timeOFDayOffered
-FROM Tutors t, Offerings o
-WHERE t.tutorNo = o.tutorNo AND (timeOfDayOffered LIKE 'Monday%' OR timeOfDayOffered LIKE 'Wednesday%')
+    FROM Tutors t, Offerings o
+    WHERE t.tutorNo = o.tutorNo AND (timeOfDayOffered LIKE 'Monday%' OR timeOfDayOffered LIKE 'Wednesday%')
 """)
 
 # get column names from cursor
