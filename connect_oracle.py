@@ -13,7 +13,7 @@ cx_Oracle.init_oracle_client(lib_dir = "./instantclient_19_9")
 # Connect as user "user" with password "mypass" to the "CSC423" service
 # running on lawtech.law.miami.edu
 connection = cx_Oracle.connect(
-    "gryacsc423", "c04250", "lawtech.law.miami.edu/CSC_423")
+    "user", "mypass", "lawtech.law.miami.edu/CSC_423")
 cursor = connection.cursor()
 
 cursor.execute("""
